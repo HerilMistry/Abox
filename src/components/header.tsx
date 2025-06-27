@@ -16,37 +16,36 @@ const navItems = [
   { href: '/contact', label: 'Contact' },
 ];
 
+const NavLink = ({ 
+  href, 
+  label, 
+  pathname, 
+  className, 
+  onClick 
+}: { 
+  href: string; 
+  label: string; 
+  pathname: string | null; 
+  className?: string; 
+  onClick?: () => void;
+}) => (
+  <Link
+    href={href}
+    className={cn(
+      "transition-colors hover:bg-accent hover:text-accent-foreground",
+      pathname === href ? 'bg-accent text-accent-foreground' : 'text-muted-foreground',
+      className
+    )}
+    onClick={onClick}
+  >
+    {label}
+  </Link>
+);
+
+
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // NavLink for Desktop
-  const DesktopNavLink = ({ href, label }: { href: string; label: string }) => (
-    <Link
-      href={href}
-      className={cn(
-        "px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground",
-        pathname === href ? 'bg-accent text-accent-foreground' : 'text-muted-foreground'
-      )}
-    >
-      {label}
-    </Link>
-  );
-
-  // NavLink for Mobile
-  const MobileNavLink = ({ href, label }: { href: string; label: string }) => (
-    <Link
-      href={href}
-      className={cn(
-        "block rounded-md px-3 py-2 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground",
-        pathname === href ? 'bg-accent text-accent-foreground' : 'text-muted-foreground'
-      )}
-      onClick={() => setIsMobileMenuOpen(false)}
-    >
-      {label}
-    </Link>
-  );
-
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-md">
@@ -59,7 +58,12 @@ export function Header() {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-1">
                 {navItems.map(item => (
-                <DesktopNavLink key={item.href} {...item} />
+                  <NavLink 
+                    key={item.href} 
+                    {...item} 
+                    pathname={pathname}
+                    className="px-3 py-2 rounded-md text-sm font-medium"
+                  />
                 ))}
             </nav>
             <Button asChild className="hidden md:flex">
@@ -87,7 +91,13 @@ export function Header() {
                         </div>
                     <nav className="flex flex-col gap-2 p-4">
                         {navItems.map(item => (
-                        <MobileNavLink key={item.href} {...item} />
+                          <NavLink 
+                            key={item.href} 
+                            {...item} 
+                            pathname={pathname}
+                            className="block rounded-md px-3 py-2 text-base font-medium"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          />
                         ))}
                     </nav>
                     <div className="mt-auto p-4 border-t">
