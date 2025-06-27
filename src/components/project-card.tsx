@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="group flex flex-col overflow-hidden rounded-lg border-border/50 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:border-border">
+    <Card className="group flex flex-col overflow-hidden rounded-lg transition-all duration-300 ease-in-out hover:shadow-xl">
       <div className="aspect-[16/9] relative overflow-hidden">
         <Image
           src={project.image}

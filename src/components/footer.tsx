@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import { Github, Twitter, Linkedin, FolderKanban } from 'lucide-react';
+import { Github, Twitter, Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -9,7 +9,6 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <FolderKanban className="h-8 w-8 text-primary" />
               <span className="font-bold text-2xl font-headline">Abox</span>
             </Link>
             <p className="text-muted-foreground text-sm">

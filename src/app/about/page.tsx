@@ -24,7 +24,7 @@ export default function AboutPage() {
       </div>
 
       <section className="grid md:grid-cols-3 gap-8 mb-12">
-        <Card className="transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+        <Card className="transition-shadow duration-300 ease-in-out hover:shadow-xl">
           <CardHeader className="flex-row items-center gap-4">
             <Lightbulb className="w-8 h-8 text-primary" />
             <CardTitle>Our Philosophy</CardTitle>
@@ -35,7 +35,7 @@ export default function AboutPage() {
             </p>
           </CardContent>
         </Card>
-        <Card className="transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+        <Card className="transition-shadow duration-300 ease-in-out hover:shadow-xl">
           <CardHeader className="flex-row items-center gap-4">
             <Target className="w-8 h-8 text-primary" />
             <CardTitle>Our Mission</CardTitle>
@@ -46,7 +46,7 @@ export default function AboutPage() {
             </p>
           </CardContent>
         </Card>
-        <Card className="transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+        <Card className="transition-shadow duration-300 ease-in-out hover:shadow-xl">
           <CardHeader className="flex-row items-center gap-4">
             <Users className="w-8 h-8 text-primary" />
             <CardTitle>Our Team</CardTitle>
