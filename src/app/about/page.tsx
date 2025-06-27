@@ -13,7 +13,7 @@ export default function AboutPage() {
         </p>
       </header>
       
-      <div className="relative aspect-[16/6] rounded-xl overflow-hidden mb-12">
+      <div className="relative aspect-[16/6] rounded-xl overflow-hidden mb-12 shadow-lg">
         <Image 
           src="https://placehold.co/1200x400.png" 
           alt="Our Team"
@@ -24,7 +24,7 @@ export default function AboutPage() {
       </div>
 
       <section className="grid md:grid-cols-3 gap-8 mb-12">
-        <Card>
+        <Card className="transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
           <CardHeader className="flex-row items-center gap-4">
             <Lightbulb className="w-8 h-8 text-primary" />
             <CardTitle>Our Philosophy</CardTitle>
@@ -35,7 +35,7 @@ export default function AboutPage() {
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
           <CardHeader className="flex-row items-center gap-4">
             <Target className="w-8 h-8 text-primary" />
             <CardTitle>Our Mission</CardTitle>
@@ -46,7 +46,7 @@ export default function AboutPage() {
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
           <CardHeader className="flex-row items-center gap-4">
             <Users className="w-8 h-8 text-primary" />
             <CardTitle>Our Team</CardTitle>

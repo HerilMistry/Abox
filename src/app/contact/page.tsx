@@ -50,7 +50,7 @@ export default function ContactPage() {
 
       <div className="grid md:grid-cols-2 gap-12">
         <div className="space-y-8">
-            <Card>
+            <Card className="transition-all duration-300 hover:shadow-md hover:border-primary/20">
                 <CardContent className="pt-6 flex items-start gap-4">
                     <div className="bg-primary/10 text-primary p-3 rounded-lg">
                         <Mail className="w-6 h-6"/>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                     </div>
                 </CardContent>
             </Card>
-            <Card>
+            <Card className="transition-all duration-300 hover:shadow-md hover:border-primary/20">
                 <CardContent className="pt-6 flex items-start gap-4">
                     <div className="bg-primary/10 text-primary p-3 rounded-lg">
                         <MapPin className="w-6 h-6"/>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                     </div>
                 </CardContent>
             </Card>
-             <Card>
+             <Card className="transition-all duration-300 hover:shadow-md hover:border-primary/20">
                 <CardContent className="pt-6 flex items-start gap-4">
                     <div className="bg-primary/10 text-primary p-3 rounded-lg">
                         <Phone className="w-6 h-6"/>
@@ -88,7 +88,7 @@ export default function ContactPage() {
             </Card>
         </div>
         <div>
-          <Card>
+          <Card className="border-border/50">
             <CardContent className="pt-6">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">

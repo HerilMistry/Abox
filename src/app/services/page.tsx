@@ -37,7 +37,7 @@ export default function ServicesPage() {
       
       <section className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
         {services.map((service, index) => (
-          <Card key={index} className="flex flex-col md:flex-row items-start p-6 gap-6 hover:shadow-xl transition-shadow duration-300">
+          <Card key={index} className="flex flex-col md:flex-row items-start p-6 gap-6 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
             <div className="bg-primary/10 text-primary p-4 rounded-lg">
                <service.icon className="w-8 h-8" />
             </div>
