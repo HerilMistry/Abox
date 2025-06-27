@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -7,10 +8,9 @@ type TagFiltersProps = {
   tags: string[];
   selectedTag: string | null;
   setSelectedTag: (tag: string | null) => void;
-  layout?: 'default' | 'sidebar';
 };
 
-export function TagFilters({ tags, selectedTag, setSelectedTag, layout = 'default' }: TagFiltersProps) {
+export function TagFilters({ tags, selectedTag, setSelectedTag }: TagFiltersProps) {
   const handleTagClick = (tag: string) => {
     if (selectedTag === tag) {
       setSelectedTag(null); // Deselect if the same tag is clicked again
@@ -19,16 +19,12 @@ export function TagFilters({ tags, selectedTag, setSelectedTag, layout = 'defaul
     }
   };
   
-  const containerClasses = layout === 'sidebar' ? "flex flex-col items-start gap-1" : "flex flex-wrap gap-2 justify-center";
-  const buttonClasses = layout === 'sidebar' ? "w-full justify-start" : "";
-
   return (
-    <div className={containerClasses}>
-      <h3 className="px-2 py-1 text-sm font-semibold text-muted-foreground">Filters</h3>
+    <div className="flex flex-wrap gap-2 justify-center">
       <Button
-        variant={selectedTag === null ? "secondary" : "ghost"}
+        variant={selectedTag === null ? "default" : "outline"}
         onClick={() => setSelectedTag(null)}
-        className={cn("transition-all duration-200", buttonClasses)}
+        className="transition-all duration-200"
         size="sm"
       >
         All Projects
@@ -36,9 +32,9 @@ export function TagFilters({ tags, selectedTag, setSelectedTag, layout = 'defaul
       {tags.map((tag) => (
         <Button
           key={tag}
-          variant={selectedTag === tag ? "secondary" : "ghost"}
+          variant={selectedTag === tag ? "default" : "outline"}
           onClick={() => handleTagClick(tag)}
-          className={cn("transition-all duration-200", buttonClasses)}
+          className="transition-all duration-200"
           size="sm"
         >
           {tag}
