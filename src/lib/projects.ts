@@ -17,7 +17,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "GraphQL", "Stripe", "TypeScript"],
     githubUrl: "https://github.com/",
     liveUrl: "https://example.com",
-    image: "https://placehold.co/800x450.png",
+    image: "https://placehold.co/1280x720.png",
     imageHint: "online store",
   },
   {
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Liveblocks", "Real-time", "Shadcn UI"],
     githubUrl: "https://github.com/",
     liveUrl: "https://example.com",
-    image: "https://placehold.co/800x450.png",
+    image: "https://placehold.co/1280x720.png",
     imageHint: "collaboration design",
   },
   {
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     description: "A SaaS platform that leverages Genkit and Gemini to generate high-quality marketing copy and blog posts automatically.",
     tags: ["GenAI", "Genkit", "SaaS", "Next.js"],
     githubUrl: "https://github.com/",
-    image: "https://placehold.co/800x450.png",
+    image: "https://placehold.co/1280x720.png",
     imageHint: "ai writing",
   },
   {
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     tags: ["React", "D3.js", "Data Viz", "API"],
     githubUrl: "https://github.com/",
     liveUrl: "https://example.com",
-    image: "https://placehold.co/800x450.png",
+    image: "https://placehold.co/1280x720.png",
     imageHint: "charts graphs",
   },
   {
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     tags: ["T3 Stack", "Next.js", "tRPC", "Prisma"],
     githubUrl: "https://github.com/",
     liveUrl: "https://example.com",
-    image: "https://placehold.co/800x450.png",
+    image: "https://placehold.co/1280x720.png",
     imageHint: "social network",
   },
   {
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     description: "A secure and scalable cloud storage service similar to Dropbox, built using Go for the backend and React for the frontend.",
     tags: ["Go", "React", "Cloud", "API"],
     githubUrl: "https://github.com/",
-    image: "https://placehold.co/800x450.png",
+    image: "https://placehold.co/1280x720.png",
     imageHint: "cloud storage",
   },
 ];
