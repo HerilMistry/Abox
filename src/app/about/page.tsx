@@ -15,7 +15,7 @@ export default function AboutPage() {
       
       <div className="relative aspect-[16/6] rounded-xl overflow-hidden mb-12 shadow-lg">
         <Image 
-          src="https://placehold.co/1600x600.png" 
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
           alt="Our Team"
           fill
           className="object-cover"

@@ -1,3 +1,4 @@
+
 export type Project = {
   id: number;
   title: string;
@@ -17,7 +18,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "GraphQL", "Stripe", "TypeScript"],
     githubUrl: "https://github.com/",
     liveUrl: "https://example.com",
-    image: "https://placehold.co/1280x720.png",
+    image: "https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=1974&auto=format&fit=crop",
     imageHint: "online store",
   },
   {
@@ -27,7 +28,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Liveblocks", "Real-time", "Shadcn UI"],
     githubUrl: "https://github.com/",
     liveUrl: "https://example.com",
-    image: "https://placehold.co/1280x720.png",
+    image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop",
     imageHint: "collaboration design",
   },
   {
@@ -36,7 +37,7 @@ export const projects: Project[] = [
     description: "A SaaS platform that leverages Genkit and Gemini to generate high-quality marketing copy and blog posts automatically.",
     tags: ["GenAI", "Genkit", "SaaS", "Next.js"],
     githubUrl: "https://github.com/",
-    image: "https://placehold.co/1280x720.png",
+    image: "https://images.unsplash.com/photo-1516116216624-53e6973bea17?q=80&w=2070&auto=format&fit=crop",
     imageHint: "ai writing",
   },
   {
@@ -46,7 +47,7 @@ export const projects: Project[] = [
     tags: ["React", "D3.js", "Data Viz", "API"],
     githubUrl: "https://github.com/",
     liveUrl: "https://example.com",
-    image: "https://placehold.co/1280x720.png",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
     imageHint: "charts graphs",
   },
   {
@@ -56,7 +57,7 @@ export const projects: Project[] = [
     tags: ["T3 Stack", "Next.js", "tRPC", "Prisma"],
     githubUrl: "https://github.com/",
     liveUrl: "https://example.com",
-    image: "https://placehold.co/1280x720.png",
+    image: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=2071&auto=format&fit=crop",
     imageHint: "social network",
   },
   {
@@ -65,7 +66,7 @@ export const projects: Project[] = [
     description: "A secure and scalable cloud storage service similar to Dropbox, built using Go for the backend and React for the frontend.",
     tags: ["Go", "React", "Cloud", "API"],
     githubUrl: "https://github.com/",
-    image: "https://placehold.co/1280x720.png",
+    image: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2070&auto=format&fit=crop",
     imageHint: "cloud storage",
   },
 ];
